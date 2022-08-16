@@ -1,0 +1,14 @@
+>>>>>>>>>>>>>>>>>>>	USF	<<<<<<<<<<<<
+before starting you most to instal Ursina
+
+to turn on a big screen add your .mp4 file to this file path and rename it to oh.mp4
+
+'w' 's' 'a' 'd' to move 
+
+'e' to get car
+
+'i' 'k' '8' '2' to change a scene
+
+
+
+>>>>>>>>>>>>>>>>>>	USF	<<<<<<<<<<<<<<<<<
