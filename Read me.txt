@@ -1,7 +1,7 @@
 >>>>>>>>>>>>>>>>>>>	USF	<<<<<<<<<<<<
-before starting you most to instal Ursina
+before starting you most to install Ursina
 
-to turn on a big screen add your .mp4 file to this file path and rename it to oh.mp4
+to turn on a big screen add your .mp4 file to this folder and rename it to oh.mp4
 
 'w' 's' 'a' 'd' to move 
 
