@@ -3,8 +3,6 @@
 #>>>>>>>>   press >a< and >d< to turn right left  
 #>>>>>>>>   press >e< to get car'#
 
-timexx=0.0000000001
-kkk=0
 
 from ursina import Entity,Ursina,color,Sky,window,camera,Audio,Text,held_keys,math
 import random as rdm
@@ -77,7 +75,7 @@ while line<10000:
 lll=Entity(model='cube',y=.32,scale=(100000,.5,1),z=-10-30,color=color.rgb(128,128,20))
 lll=Entity(model='cube',y=.32,scale=(100000,.5,1),z=10-30,color=color.rgb(150,140,20))
 line=-2000'''
-##########################################  sonic  #######################################################################
+########################################## B#######################################################################
 myimgs=['bb.jpg','bb1.jpg','bb2.jpg']
 while line<5000:
     texttt=rdm.choice(myimgs)
@@ -123,7 +121,7 @@ car=Entity(
 
 i=0
 car1=Entity(
-    model='car',texture='shore',scale=(1.1,1.1,1.1),color=color.rgb(255,200,120),rotation_y=0,y=.8,z=0,x=-1000
+    model='car',texture='shore',scale=(1.1,1.1,1.1),color=color.rgb(255,200,120),rotation_y=0,y=.8,z=0,x=-1000 # yellow car
 )
 
 
