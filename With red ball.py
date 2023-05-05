@@ -29,15 +29,10 @@ window.fullscreen=0
 ground=Entity(model='plane',scale=(10000,1,10000),collider='mesh',texture='grass',texture_scale=(5000,5000),color=color.rgb(10,60,10))
 
 
-'''roud=Entity(model='A80.obj',scale=(8,1,8),z=-500,y=-5,color=color.rgb(122,40,200),x=-500)
-roud1=Entity(model='A80.obj',scale=(8,1,8),z=-970,y=-5,color=color.rgb(122,40,200),x=-930)
-roud=Entity(model='A80.obj',scale=(8,1,8),z=-1530,y=-5,color=color.rgb(122,40,200),x=-1500)
-roud1=Entity(model='A80.obj',scale=(8,1,8),z=-2000,y=-5,color=color.rgb(122,40,200),x=-2000)'''
 sky=Sky(color=color.rgb(80,30,160),texter='myimage.png',texture_scale=(3))
 wall1=Entity(model='cube',y=17,scale=(.2,20,40),texture='kiku.mp4',collider='mesh',x=0,color=color.rgb(100,100,100),z=-15,rotation_y=45)
 wall2=Entity(model='cube',y=30,z=-15,scale=(.2,40,25),texture='kiku.mp4',rotation_y=45,collider='mesh',x=1520,color=color.rgb(200,200,200))
-#www0=Entity(model='cube',z=-30.2,scale=(30000,10,.2),texture='grass',color=color.rgb(255,128,20),collider='mesh')
-#www1=Entity(model='cube',z=.2,scale=(30000,10,.2),texture='grass',color=color.rgb(255,128,20),collider='mesh')
+
 ######################################################################
 ground2=Entity(model='plane',y=.3,scale=(10000,1,10),collider='mesh',texture='grass',texture_scale=1,color=color.rgb(30,30,40))
 line=-2000
@@ -50,8 +45,7 @@ while line<5000:
     lll=Entity(model='cube',y=.32,scale=(8,.1,.5),x=line,z=-1.7)
     line=line+20
 
-'''lll=Entity(model='cube',y=.32,scale=(10000,.5,.2),z=-5,color=color.rgb(128,128,20))
-lll=Entity(model='cube',y=.32,scale=(10000,.5,.2),z=5,color=color.rgb(150,140,20))'''
+
 line=-2000
 ###########################################################################
 sun=Entity(model='sphere',scale=(450),color=color.rgb(200,200,60),texture='grass',rotation_x=0,texture_scale=(2,2))
@@ -61,21 +55,8 @@ sun=Entity(model='sphere',scale=(450),color=color.rgb(200,200,60),texture='grass
 
 
 ###########################################################################
-'''ground2=Entity(model='plane',y=.3,scale=(10000,1,20),z=-30,collider='mesh',texture='grass',texture_scale=1,color=color.rgb(30,30,40))
-line=-2000
-lll=Entity(model='cube',y=1,scale=(2,.5,1),x=line)
-while line<10000:
-    lll=Entity(model='cube',y=.32,scale=(8,.1,.5),x=line,z=3.45-30)
-    line=line+20
-line=-2000
-while line<10000:
-    lll=Entity(model='cube',y=.32,scale=(8,.1,.5),x=line,z=-3.45-30)
-    line=line+20
 
-lll=Entity(model='cube',y=.32,scale=(100000,.5,1),z=-10-30,color=color.rgb(128,128,20))
-lll=Entity(model='cube',y=.32,scale=(100000,.5,1),z=10-30,color=color.rgb(150,140,20))
-line=-2000'''
-########################################## B#######################################################################
+
 myimgs=['bb.jpg','bb1.jpg','bb2.jpg']
 while line<5000:
     texttt=rdm.choice(myimgs)
@@ -164,25 +145,7 @@ def update():
         knok.volume=abs(10/(camera.x-1500))
     else :
         knok.volume=0
-    '''if camera.z>=10:
-        car.rotation_y=car.rotation_y+10
-        car.rotation_z=car.rotation_z+10
-        camera.z=camera.z-.1
-
-
-    else:
-        car.rotation_y=-90
-        car.rotation_z=0
-    if camera.z>=10 and camera.z<=10.1:
-        kim.speak(', , latteshof albanat')
-    if camera.rotation_z>0:
-        camera.rotation_z=camera.rotation_z-1
-    if camera.rotation_z<0:
-        camera.rotation_z=camera.rotation_z+1
-    if camera.rotation_x>0:
-        camera.rotation_x=camera.rotation_x-.2
-    if camera.rotation_x<0:
-        camera.rotation_x=camera.rotation_x+.2'''       
+          
     if held_keys['e'] and car.parent!=camera.ui:
         car.parent=camera.ui
         car.scale=(.5)
@@ -243,10 +206,7 @@ def update():
 
         car.rotation_y=-105
         car.rotation_z=-5
-    '''else:
-        pass
-        car.rotation_y=-90
-        car.rotation_z=0'''
+   
     if held_keys['i']:
         camera.y=camera.y+1
     if held_keys['k']:
